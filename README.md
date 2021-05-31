@@ -14,3 +14,5 @@ Phần mềm quản lý mượn trả sách ở thư viện.
  ```
  
 4. Chạy file quanlythuvienDB.sql trong MS SQL Server.
+5. Cài jdbc sql server driver để kết nối sql server với java: https://docs.microsoft.com/en-us/sql/connect/jdbc/download-microsoft-jdbc-driver-for-sql-server?view=sql-server-ver15
+
