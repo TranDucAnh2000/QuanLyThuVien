@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="499.0" prefWidth="743.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.muontra.CTMuonTraController">
+   <children>
+      <Button layoutX="22.0" layoutY="34.0" mnemonicParsing="false" onAction="#them" prefHeight="43.0" prefWidth="113.0" styleClass="button_small" stylesheets="@../../static/ButtonMain.css" text="Thêm" />
+      <Button layoutX="157.0" layoutY="34.0" mnemonicParsing="false" onAction="#xoa" prefHeight="43.0" prefWidth="113.0" styleClass="button_small" stylesheets="@../../static/ButtonMain.css" text="Xóa" />
+      <Button layoutX="425.0" layoutY="34.0" mnemonicParsing="false" onAction="#tinhTienPhat" prefHeight="43.0" prefWidth="124.0" styleClass="button_small" stylesheets="@../../static/ButtonMain.css" text="Tính tiền phạt" />
+      <Label layoutX="558.0" layoutY="34.0" prefHeight="43.0" prefWidth="131.0" text="(1000đ / 1 ngày)">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableCTMuonTra" layoutX="22.0" layoutY="102.0" prefHeight="321.0" prefWidth="703.0" styleClass="tableview" stylesheets="@../../static/ButtonMain.css">
+        <columns>
+          <TableColumn fx:id="col_MaMuonTra" prefWidth="89.71426200866699" text="Mã mượn trả" />
+          <TableColumn fx:id="col_MaSach" prefWidth="78.28570556640625" text="Mã sách" />
+            <TableColumn fx:id="col_NgayMuon" prefWidth="131.42860412597656" text="Ngày mượn" />
+            <TableColumn fx:id="col_NgayHenTra" prefWidth="124.0" text="Ngày hẹn trả" />
+            <TableColumn fx:id="col_NgayTra" prefWidth="127.42855834960938" text="Ngày trả" />
+            <TableColumn fx:id="col_TienPhat" prefWidth="151.4285888671875" text="Tiền phạt (vnđ)" />
+        </columns>
+      </TableView>
+      <Button layoutX="290.0" layoutY="34.0" mnemonicParsing="false" onAction="#sua" prefHeight="43.0" prefWidth="113.0" styleClass="button_small" stylesheets="@../../static/ButtonMain.css" text="Sửa" />
+      <Button layoutX="564.0" layoutY="441.0" mnemonicParsing="false" onAction="#xuatFile" prefHeight="43.0" prefWidth="160.0" styleClass="button_small" stylesheets="@../../static/ButtonMain.css" text="Xuất file Excel" />
+      <Button layoutX="389.0" layoutY="441.0" mnemonicParsing="false" onAction="#nhapFile" prefHeight="43.0" prefWidth="160.0" styleClass="button_small" stylesheets="@../../static/ButtonMain.css" text="Nhập file Excel" />
+      <TextField fx:id="tenFile" layoutX="214.0" layoutY="441.0" prefHeight="43.0" prefWidth="160.0" promptText="Người xuất file" styleClass="textfield" stylesheets="@../../static/ButtonMain.css" />
+   </children>
+</AnchorPane>

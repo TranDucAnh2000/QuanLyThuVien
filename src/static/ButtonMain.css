@@ -1,0 +1,54 @@
+.button{
+    -fx-font-weight: bold;
+    -fx-background-color: #ffb6c1;
+    -fx-background-radius: 22;
+    -fx-font-size: 17;
+    -fx-text-fill: white;
+}
+
+.button:hover{
+    -fx-font-weight: bold;
+    -fx-background-color: #FF8D9E;
+    -fx-background-radius: 22;
+    -fx-font-size: 17;
+    -fx-text-fill: white;
+}
+
+.button_small{
+    -fx-font-weight: bold;
+    -fx-background-color: #ffb6c1;
+    -fx-background-radius: 7;
+    -fx-font-size: 15;
+    -fx-text-fill: white;
+}
+
+.button_small:hover{
+    -fx-font-weight: bold;
+    -fx-background-color: #FF8D9E;
+    -fx-background-radius: 7;
+    -fx-font-size: 15;
+    -fx-text-fill: white;
+}
+
+.tableview{
+    -fx-border-color: black;
+    -fx-background-color: white;
+}
+
+.textfield{
+    -fx-font-size: 15;
+    -fx-border-color: black;
+    -fx-background-color: white;
+}
+
+.combobox{
+    -fx-font-size: 15;
+    -fx-border-color: black;
+    -fx-background-color: white;
+    -fx-font-weight: bold;
+}
+
+
+
+
+
